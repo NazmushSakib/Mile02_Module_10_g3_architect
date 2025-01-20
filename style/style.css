@@ -102,23 +102,24 @@ main>section{
   font-size: 4.5rem;
 }
 
-.banner, .navbar{
+/*! banner section style */
+.banner, .navbar, footer{
   max-width: 1440px;
   margin: 0 auto;
 }
 
 /*? banner section style */
 
-.banner-title{
-  font-size: 700;
-  font-size: 6.4rem;
-}
-
 .banner-content{
   max-width: 850px; /*figma width= 861px*/
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
+}
+
+.banner-title{
+  font-size: 700;
+  font-size: 6.4rem;
 }
 
 /* .banner-content p{
@@ -202,6 +203,21 @@ main>section{
   gap: 100px;
 }
 
+#experience-badge{
+  padding: 45px 42px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+
+#experience-year{
+  font-size: 6.4rem;
+}
+
+/* .featured-architect{
+  width: 100%;
+} */
 
 /*! Some Facts Section */
 .fact-description{
@@ -261,13 +277,27 @@ main>section{
   filter: grayscale(100%);
 }
 
+/*! Footer Section */
+footer{
+  /* max-width: 1440px; */
+  /* padding: 39px auto; */
+  text-align: center;
+  background-color: #FFF4E7;
+  height: 100px;
+  margin: 100px auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 /* Responsive and Media Query */
 @media screen and (max-width : 576px) {
   .navbar, 
   .nav-links,
-  .teams{
+  .teams,
+  .features{
     flex-direction: column;
   }
   .team-image-container, 
@@ -296,12 +326,28 @@ main>section{
     justify-items: center;
     gap: 50px;
   }
+  #experience-badge{
+    /* margin-top: 20px;
+    margin-left: 20px; */
+    /* margin: 20px 20px; */
+    margin: 20px auto;
+    display: grid;
+    justify-items: center;
+  }
+  .featured-architect img{
+    width: 100%;
+  }
+  footer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 /* Medium Size devices */
 
 @media screen and (min-width : 577px) and (max-width : 992px) {
-  .teams{
+  .teams,
+  .features{
     flex-direction: column;
   }
   .some-facts, .fact-description{
@@ -313,6 +359,21 @@ main>section{
     gap:50px;
     justify-items: center;
   }
-  
+
+  #experience-badge{
+    /* margin-top: 20px;
+    margin-left: 20px; */
+    /* margin: 20px 20px; */
+    margin: 20px auto;
+    display: grid;
+    justify-items: center;
+  }
+  .featured-architect img{
+    width: 100%;
+  }
+  footer{
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
 
 }
